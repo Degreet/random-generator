@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 42%;
+    margin: auto;
+}
+
+h1 {
+    max-width: 70%;
+    text-align: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-block {
+    display: flex;
+    align-items: center;
+}
+
+.main-text {
+    font-size: 65px !important;
+}
+
+#back {
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    opacity: .6;
+    font-size: 20px;
+}
+
+#back:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 28px !important;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    h1 {
+        font-size: 27px !important;
+    }
+}
