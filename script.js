@@ -2,9 +2,13 @@ let arrYesOrNo = ['Да', 'Нет']
 let arrOrelIReshka = ['Орёл', 'Решка']
 
 function randomInt() {
-    let min = minValueInt.value, max = maxValueInt.value, result = Math.round(Math.random() * max)
-    if (result >= min) resultNumber.innerText = result
-    else randomInt()
+    if (Number(minValueInt.value) < Number(maxValueInt.value) && minValueInt.value != '' && maxValueInt != '') {
+        let min = minValueInt.value, max = maxValueInt.value, result = Math.round(Math.random() * max)
+        if (result >= min) resultNumber.innerText = result
+        else randomInt()
+    } else {
+        alert("Не допустимое значение!")
+    }
 }
 
 function yesOrNo() {

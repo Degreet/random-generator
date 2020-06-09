@@ -4,12 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    max-width: 42%;
+    max-width: 45%;
     margin: auto;
 }
 
 h1 {
-    max-width: 70%;
+    width: 100vw;
     text-align: center;
 }
 
